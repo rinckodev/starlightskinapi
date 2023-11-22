@@ -65,6 +65,10 @@ interface IsometricRenderType {
     type: RenderTypes.Isometric;
     crop: CommonRenderCrops;
 }
+interface CustomRenderType {
+    type: RenderTypes.Custom;
+    crop: CommonRenderCrops;
+}
 interface HeadRenderType {
     type: RenderTypes.Head;
     crop: RenderCrops.Full;
@@ -85,5 +89,5 @@ interface SkinRenderType {
     type: RenderTypes.Skin;
     crop: RenderCrops.Default | RenderCrops.Processed;
 }
-export type SkinRenderOptions = DefaultRenderType | MarchingRenderType | WalkingRenderType | CrouchingRenderType | CrossedRenderType | CrissCrossRenderType | CheeringRenderType | RelaxingRenderType | TrudgingRenderType | CoweringRenderType | PointingRenderType | LungingRenderType | DungeonsRenderType | FacepalmRenderType | UltimateRenderType | IsometricRenderType | HeadRenderType | BitzelRenderType | PixelRenderType | OrnamentRenderType | SkinRenderType;
+export type SkinRenderOptions = DefaultRenderType | MarchingRenderType | WalkingRenderType | CrouchingRenderType | CrossedRenderType | CrissCrossRenderType | CheeringRenderType | RelaxingRenderType | TrudgingRenderType | CoweringRenderType | PointingRenderType | LungingRenderType | DungeonsRenderType | FacepalmRenderType | UltimateRenderType | IsometricRenderType | CustomRenderType | HeadRenderType | BitzelRenderType | PixelRenderType | OrnamentRenderType | SkinRenderType;
 export {};

@@ -18,14 +18,14 @@ import { fetchSkinInfo } from "starlightskinapi";
 
 async function main(){
     const playerNickname = "RinckoZ_";
-    const skinInfo = await fetchSkinInfo(playerNickname)
+    const infoResult = await fetchSkinInfo(playerNickname)
 
-    if (skinInfo){
-        console.log(skinInfo.playerUUID)
-        console.log(skinInfo.skinUrl)
-        console.log(skinInfo.userCape)
-        console.log(skinInfo.skinTextureWidth)
-        console.log(skinInfo.skinTextureHeight)
+    if (infoResult.success){
+        console.log(infoResult.playerUUID)
+        console.log(infoResult.skinUrl)
+        console.log(infoResult.userCape)
+        console.log(infoResult.skinTextureWidth)
+        console.log(infoResult.skinTextureHeight)
     }
 }
 main();
@@ -39,27 +39,25 @@ http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2
 64
 ```
 
-Getting a render pose of your skin
-> _If you do not specify the properties in the options object, the RenderType by default is "Default" and the RenderCrop by default is "Full"_
+If the nick or uuid is not found, success will be false, and you will have the error property
 ```ts
-import { fetchSkinRender } from "starlightskinapi";
-
 async function main(){
-    const playerNickname = "RinckoZ_";
-    const skinUrl = await fetchSkinRender(playerNickname)
+    const playerNickname = "NicknameVeryLargeAndUnlikely";
+    const infoResult = await fetchSkinInfo(playerNickname)
 
-    if (skinUrl){
-        console.log(skinUrl)
+    if (!infoResult.success){
+        console.log(infoResult.error)
     }
 }
 main();
 ```
-Output:
+
+Output: 
 ```bash
-https://starlightskins.lunareclipse.studio/skin-render/default/RinckoZ_/full
+Unknown player username/uuid.
 ```
 
-You can set the type that the function will return. The available types are: "string" and "buffer"
+See how to get a render pose
 
 ```ts
 import { RenderCrops, RenderTypes, fetchSkinRender } from "starlightskinapi";
@@ -70,11 +68,17 @@ async function main(){
     const renderResult = await fetchSkinRender(playerNickname, {
         type: RenderTypes.Default,
         crop: RenderCrops.Full,
-        export: "buffer",
     })
 
-    if (renderResult){
-        await writeFile("./render.png", renderResult);
+    if (!renderResult.success){
+        console.log(renderResult.error)
+        return;
+    }
+
+    if (renderResult.success){
+        const { buffer, url } = renderResult;
+        console.log(url) // 
+        await writeFile("./render.png", buffer);
     }
 }
 main();
@@ -112,8 +116,14 @@ async function main(){
         },
     });
 
-    if (renderResult){
-        await writeFile("./customized.png", renderResult);
+    if (!renderResult.success){
+        console.log(renderResult.error)
+        return;
+    }
+
+    if (renderResult.success){
+        const { buffer } = renderResult;
+        await writeFile("./customized.png", buffer);
     }
 }
 main();
@@ -122,3 +132,30 @@ main();
 Output:
 
 <img src="assets/images/customized.png" width=200>
+
+
+## Full Render Type List
+
+| Render Types | Supported Crops | Preview |
+| ------------ | --------------- | ------- |
+| Default | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/default/RinckoZ_/full" width=40> |
+| Marching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/marching/RinckoZ_/full" width=40> |
+| Walking | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/walking/RinckoZ_/full" width=40> |
+| Crouching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/crouching/RinckoZ_/full" width=40> |
+| Crossed | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/crossed/RinckoZ_/full" width=40> |
+| CrissCross| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/criss_cross/RinckoZ_/full" width=40> |
+| Cheering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/cheering/RinckoZ_/full" width=40> |
+| Relaxing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/relaxing/RinckoZ_/full" width=40> |
+| Trudging | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/trudging/RinckoZ_/full" width=40> |
+| Cowering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/cowering/RinckoZ_/full" width=40> |
+| Pointing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/pointing/RinckoZ_/full" width=40> |
+| Lunging| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/lunging/RinckoZ_/full" width=40> |
+| Dungeons| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/dungeons/RinckoZ_/full" width=40> |
+| Facepalm| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/facepalm/RinckoZ_/full" width=40> |
+| Ultimate| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/ultimate/RinckoZ_/full" width=40> |
+| Isometric| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/isometric/RinckoZ_/full" width=40> |
+| Head| Full | <img src="https://starlightskins.lunareclipse.studio/skin-render/head/RinckoZ_/full" width=40> |
+| Bitzel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/bitzel/RinckoZ_/full" width=40> |
+| Pixel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/pixel/RinckoZ_/full" width=40> |
+| Ornament| Full | <img src="https://starlightskins.lunareclipse.studio/skin-render/ornament/RinckoZ_/full" width=40> |
+| Skin| Default, Processed | <img src="https://starlightskins.lunareclipse.studio/skin-render/skin/RinckoZ_/default" width=40> |

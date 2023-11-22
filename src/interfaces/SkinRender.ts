@@ -67,6 +67,10 @@ interface IsometricRenderType {
     type: RenderTypes.Isometric,
     crop: CommonRenderCrops
 }
+interface CustomRenderType {
+    type: RenderTypes.Custom,
+    crop: CommonRenderCrops
+}
 interface HeadRenderType {
     type: RenderTypes.Head,
     crop: RenderCrops.Full
@@ -105,6 +109,7 @@ export type SkinRenderOptions =
 | FacepalmRenderType 
 | UltimateRenderType 
 | IsometricRenderType 
+| CustomRenderType
 | HeadRenderType 
 | BitzelRenderType 
 | PixelRenderType 

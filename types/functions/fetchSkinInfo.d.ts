@@ -1,2 +1,11 @@
 import { SkinInfo } from "../interfaces/SkinInfo";
-export declare function fetchSkinInfo(nickOrUIID: string): Promise<Partial<SkinInfo> | null>;
+type SuccessResult = {
+    success: true;
+} & Partial<SkinInfo>;
+interface FailResult {
+    success: false;
+    error: string;
+}
+type FetchSkinInfoResult = SuccessResult | FailResult;
+export declare function fetchSkinInfo(nickOrUIID: string): Promise<FetchSkinInfoResult>;
+export {};
