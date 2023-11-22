@@ -42,7 +42,7 @@ http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2
 If the nick or uuid is not found, success will be false, and you will have the error property
 ```ts
 async function main(){
-    const playerNickname = "NicknameVeryLargeAndUnlikely";
+    const playerNickname = "NicknameVeryLongAndUnlikely";
     const infoResult = await fetchSkinInfo(playerNickname)
 
     if (!infoResult.success){
