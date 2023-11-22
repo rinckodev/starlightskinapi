@@ -7,13 +7,18 @@
     "dev": "ts-node ./devOnly/index.ts",
     "build": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rinckodev/starlightskinapi"
+  },
+  "homepage": "https://github.com/rinckodev/starlightskinapi#readme",
   "types": "./types/index.d.ts",
   "keywords": [
     "minecraft", "skin", "render",
     "api", "wrapper", "starlightskinapi",
     "starlight", "skinapi"
   ],
-  "author": "",
+  "author": "Rincko Dev (https://github.com/rinckodev)",
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.1",
