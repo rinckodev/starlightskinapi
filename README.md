@@ -99,7 +99,6 @@ async function main(){
     const renderResult = await fetchSkinRender(playerNickname, {
         type: RenderTypes.Default,
         crop: RenderCrops.Full,
-        export: "buffer",
         model: {
             capeEnabled: true,
             // ... other model options ...
