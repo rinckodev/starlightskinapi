@@ -14,7 +14,7 @@ npm install starlightskinapi
 
 fetchSkinInfo function usage:
 ```ts
-import { fetchSkinInfo } from "../src";
+import { fetchSkinInfo } from "starlightskinapi";
 
 async function main(){
     const playerNickname = "RinckoZ_";
@@ -42,7 +42,7 @@ http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2
 Getting a render pose of your skin
 > _If you do not specify the properties in the options object, the RenderType by default is "Default" and the RenderCrop by default is "Full"_
 ```ts
-import { fetchSkinRender } from "../src";
+import { fetchSkinRender } from "starlightskinapi";
 
 async function main(){
     const playerNickname = "RinckoZ_";
@@ -62,7 +62,7 @@ https://starlightskins.lunareclipse.studio/skin-render/default/RinckoZ_/full
 You can set the type that the function will return. The available types are: "string" and "buffer"
 
 ```ts
-import { RenderCrops, RenderTypes, fetchSkinRender } from "../src";
+import { RenderCrops, RenderTypes, fetchSkinRender } from "starlightskinapi";
 import { writeFile } from "node:fs/promises"
 
 async function main(){
@@ -86,7 +86,7 @@ Output:
 You can customize the model, camera and lighting options
 
 ```ts
-import { RenderCrops, RenderTypes, fetchSkinRender } from "../src";
+import { RenderCrops, RenderTypes, fetchSkinRender } from "starlightskinapi";
 import { writeFile } from "node:fs/promises"
 
 async function main(){
