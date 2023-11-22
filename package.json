@@ -1,0 +1,22 @@
+{
+  "name": "starlightskinapi",
+  "version": "1.0.0",
+  "description": "Starlight SkinAPI Wrapper",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node ./devOnly/index.ts",
+    "build": "tsc"
+  },
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "minecraft", "skin", "render",
+    "api", "wrapper", "starlightskinapi",
+    "starlight", "skinapi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
