@@ -2,17 +2,31 @@
   "name": "starlightskinapi",
   "version": "1.0.5",
   "description": "Starlight SkinAPI Wrapper",
-  "main": "dist/index.js",
-  "scripts": {
-    "dev": "ts-node ./devOnly/index.ts",
-    "build": "tsc"
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
   },
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rinckodev/starlightskinapi"
+    "url": "https://github.com/rinckodev/magicdb"
   },
-  "homepage": "https://github.com/rinckodev/starlightskinapi#readme",
-  "types": "./types/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/rinckodev/magicdb/issues"
+  },
+  "homepage": "https://github.com/rinckodev/magicdb/#readme",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx playground/index.ts",
+    "build": "unbuild"
+  },
   "keywords": [
     "minecraft",
     "skin",
@@ -24,9 +38,10 @@
     "skinapi"
   ],
   "author": "Rincko Dev (https://github.com/rinckodev)",
-  "license": "ISC",
   "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.3.2"
+    "@types/node": "^20.11.24",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.2",
+    "unbuild": "^2.0.0"
   }
 }

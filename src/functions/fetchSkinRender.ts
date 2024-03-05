@@ -18,7 +18,7 @@ interface FailResult {
     error: string;
 }
 
-type FetchSkinRenderResult = SuccessResult | FailResult
+export type FetchSkinRenderResult = SuccessResult | FailResult
 
 interface CustomOptions {
     camera: Partial<CameraOptions>;
@@ -26,7 +26,7 @@ interface CustomOptions {
     model: Partial<ModelOptions>;
 }
 
-type FetchSkinRenderOptions = SkinRenderOptions & Partial<CustomOptions>
+export type FetchSkinRenderOptions = SkinRenderOptions & Partial<CustomOptions>
 
 export async function fetchSkinRender(nickOrUIID: string, options?: FetchSkinRenderOptions): Promise<FetchSkinRenderResult> {
     if (typeof nickOrUIID !== "string"){

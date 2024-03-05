@@ -59,6 +59,26 @@ interface FacepalmRenderType {
     type: RenderTypes.Facepalm,
     crop: CommonRenderCrops
 }
+interface SleepingRenderType {
+    type: RenderTypes.Sleeping,
+    crop: RenderCrops.Full | RenderCrops.Bust
+}
+interface DeadRenderType {
+    type: RenderTypes.Dead,
+    crop: CommonRenderCrops
+}
+interface ArcherRenderType {
+    type: RenderTypes.Archer,
+    crop: CommonRenderCrops
+}
+interface KickingRenderType {
+    type: RenderTypes.Kicking,
+    crop: CommonRenderCrops
+}
+interface MojavatarRenderType {
+    type: RenderTypes.Mojavatar,
+    crop: RenderCrops.Full | RenderCrops.Bust
+}
 interface UltimateRenderType {
     type: RenderTypes.Ultimate,
     crop: CommonRenderCrops
@@ -107,6 +127,11 @@ export type SkinRenderOptions =
 | LungingRenderType 
 | DungeonsRenderType 
 | FacepalmRenderType 
+| SleepingRenderType
+| DeadRenderType
+| ArcherRenderType
+| KickingRenderType
+| MojavatarRenderType
 | UltimateRenderType 
 | IsometricRenderType 
 | CustomRenderType

@@ -1,16 +1,17 @@
 import { BASE_URL } from "../constants";
 import { SkinInfo } from "../interfaces/SkinInfo";
 
-type SuccessResult = {
+type FetchSkinInfoSuccessResult = {
     success: true,
 } & Partial<SkinInfo>
 
-interface FailResult {
+interface FetchSkinInfoFailResult {
     success: false;
     error: string;
 }
 
-type FetchSkinInfoResult = SuccessResult | FailResult
+export type FetchSkinInfoResult = FetchSkinInfoSuccessResult | FetchSkinInfoFailResult
+export type SkinInfoResult<Success extends boolean> = Extract<FetchSkinInfoResult, { success: Success }> 
 
 export async function fetchSkinInfo(nickOrUIID: string): Promise<FetchSkinInfoResult>  {
     if (typeof nickOrUIID !== "string"){

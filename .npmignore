@@ -1,4 +1,6 @@
 src
-devOnly
+playground
 node_modules
 package-lock.json
+build.config.ts
+tsconfig.json

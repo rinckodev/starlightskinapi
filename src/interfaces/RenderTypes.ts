@@ -13,6 +13,13 @@ export enum RenderTypes {
     Lunging="lunging",
     Dungeons="dungeons",
     Facepalm="facepalm",
+
+    Sleeping="sleeping",
+    Dead="dead",
+    Archer="archer",
+    Kicking="kicking",
+    Mojavatar="mojoavatar",
+
     Ultimate="ultimate",
     Isometric="isometric",
     
