@@ -16,12 +16,12 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rinckodev/magicdb"
+    "url": "https://github.com/rinckodev/starlightskinapi"
   },
   "bugs": {
-    "url": "https://github.com/rinckodev/magicdb/issues"
+    "url": "https://github.com/rinckodev/starlightskinapi/issues"
   },
-  "homepage": "https://github.com/rinckodev/magicdb/#readme",
+  "homepage": "https://github.com/rinckodev/starlightskinapi/#readme",
   "license": "MIT",
   "scripts": {
     "dev": "tsx playground/index.ts",
