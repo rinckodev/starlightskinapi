@@ -8,7 +8,7 @@ async function main(){
     //     crop: RenderCrops.Full,
     // })
 
-    const [face, bust, full, dung] = await fetchManySkinRenders("RinckoZ_",
+    const results = await fetchManySkinRenders("RinckoZ_",
         {
             crop: RenderCrops.Face,
             type: RenderTypes.Default,
@@ -26,6 +26,8 @@ async function main(){
             type: RenderTypes.Dungeons,
         }
     )
+
+    console.log(results);
 
     // if (!renderResult.success){
     //     console.log(renderResult.error)

@@ -1,6 +1,6 @@
 {
   "name": "starlightskinapi",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Starlight SkinAPI Wrapper",
   "type": "module",
   "main": "./dist/index.cjs",

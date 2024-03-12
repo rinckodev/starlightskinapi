@@ -17,7 +17,7 @@ export async function fetchSkinInfo(nickOrUIID: string): Promise<FetchSkinInfoRe
     if (typeof nickOrUIID !== "string"){
         throw new Error(`The nickOrUIID parameter expected the string type but received ${typeof nickOrUIID}`);
     }
-    const url = BASE_URL + `skin-render-info/${nickOrUIID}`;
+    const url = BASE_URL + `info/user/${nickOrUIID}`;
     
     const response = await fetch(url)
     const data = await response.json();
