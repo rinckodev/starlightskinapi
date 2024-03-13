@@ -35,7 +35,7 @@ export async function fetchSkinRender(nickOrUIID: string, options?: FetchSkinRen
     const type = options?.type || RenderTypes.Default
     const crop = options?.crop || RenderCrops.Full
 
-    const url = new URL(BASE_URL + `skin-render/${type}/${nickOrUIID}/${crop}`);
+    const url = new URL(BASE_URL + `render/${type}/${nickOrUIID}/${crop}`);
 
     const loopParams = <T>(obj: T) => {
         for(const key in obj){
