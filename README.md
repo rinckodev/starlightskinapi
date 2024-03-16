@@ -137,24 +137,24 @@ Output:
 
 | Render Types | Supported Crops | Preview |
 | ------------ | --------------- | ------- |
-| Default | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/default/RinckoZ_/full" width=40> |
-| Marching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/marching/RinckoZ_/full" width=40> |
-| Walking | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/walking/RinckoZ_/full" width=40> |
-| Crouching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/crouching/RinckoZ_/full" width=40> |
-| Crossed | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/crossed/RinckoZ_/full" width=40> |
-| CrissCross| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/criss_cross/RinckoZ_/full" width=40> |
-| Cheering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/cheering/RinckoZ_/full" width=40> |
-| Relaxing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/relaxing/RinckoZ_/full" width=40> |
-| Trudging | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/trudging/RinckoZ_/full" width=40> |
-| Cowering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/cowering/RinckoZ_/full" width=40> |
-| Pointing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/pointing/RinckoZ_/full" width=40> |
-| Lunging| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/lunging/RinckoZ_/full" width=40> |
-| Dungeons| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/dungeons/RinckoZ_/full" width=40> |
-| Facepalm| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/facepalm/RinckoZ_/full" width=40> |
-| Ultimate| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/ultimate/RinckoZ_/full" width=40> |
-| Isometric| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/isometric/RinckoZ_/full" width=40> |
-| Head| Full | <img src="https://starlightskins.lunareclipse.studio/skin-render/head/RinckoZ_/full" width=40> |
-| Bitzel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/bitzel/RinckoZ_/full" width=40> |
-| Pixel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/skin-render/pixel/RinckoZ_/full" width=40> |
-| Ornament| Full | <img src="https://starlightskins.lunareclipse.studio/skin-render/ornament/RinckoZ_/full" width=40> |
-| Skin| Default, Processed | <img src="https://starlightskins.lunareclipse.studio/skin-render/skin/RinckoZ_/default" width=40> |
+| Default | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/default/RinckoZ_/full" width=40> |
+| Marching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/marching/RinckoZ_/full" width=40> |
+| Walking | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/walking/RinckoZ_/full" width=40> |
+| Crouching | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/crouching/RinckoZ_/full" width=40> |
+| Crossed | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/crossed/RinckoZ_/full" width=40> |
+| CrissCross| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/criss_cross/RinckoZ_/full" width=40> |
+| Cheering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/cheering/RinckoZ_/full" width=40> |
+| Relaxing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/relaxing/RinckoZ_/full" width=40> |
+| Trudging | Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/trudging/RinckoZ_/full" width=40> |
+| Cowering| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/cowering/RinckoZ_/full" width=40> |
+| Pointing| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/pointing/RinckoZ_/full" width=40> |
+| Lunging| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/lunging/RinckoZ_/full" width=40> |
+| Dungeons| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/dungeons/RinckoZ_/full" width=40> |
+| Facepalm| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/facepalm/RinckoZ_/full" width=40> |
+| Ultimate| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/ultimate/RinckoZ_/full" width=40> |
+| Isometric| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/isometric/RinckoZ_/full" width=40> |
+| Head| Full | <img src="https://starlightskins.lunareclipse.studio/render/head/RinckoZ_/full" width=40> |
+| Bitzel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/bitzel/RinckoZ_/full" width=40> |
+| Pixel| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/pixel/RinckoZ_/full" width=40> |
+| Ornament| Full | <img src="https://starlightskins.lunareclipse.studio/render/ornament/RinckoZ_/full" width=40> |
+| Skin| Default, Processed | <img src="https://starlightskins.lunareclipse.studio/render/skin/RinckoZ_/default" width=40> |
