@@ -151,6 +151,11 @@ Output:
 | Lunging| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/lunging/RinckoZ_/full" width=40> |
 | Dungeons| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/dungeons/RinckoZ_/full" width=40> |
 | Facepalm| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/facepalm/RinckoZ_/full" width=40> |
+| Sleeping| Full, Bust | <img src="https://starlightskins.lunareclipse.studio/render/sleeping/RinckoZ_/full" width=40> |
+| Dead| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/dead/RinckoZ_/full" width=40> |
+| Archer| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/archer/RinckoZ_/full" width=40> |
+| Facepalm| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/kicking/RinckoZ_/full" width=40> |
+| Mojavatar| Full, Bust | <img src="https://starlightskins.lunareclipse.studio/render/mojavatar/RinckoZ_/full" width=40> |
 | Ultimate| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/ultimate/RinckoZ_/full" width=40> |
 | Isometric| Full, Bust, Face | <img src="https://starlightskins.lunareclipse.studio/render/isometric/RinckoZ_/full" width=40> |
 | Head| Full | <img src="https://starlightskins.lunareclipse.studio/render/head/RinckoZ_/full" width=40> |
