@@ -18,7 +18,7 @@ export enum RenderTypes {
     Dead="dead",
     Archer="archer",
     Kicking="kicking",
-    Mojavatar="mojoavatar",
+    Mojavatar="mojavatar",
 
     Ultimate="ultimate",
     Isometric="isometric",
